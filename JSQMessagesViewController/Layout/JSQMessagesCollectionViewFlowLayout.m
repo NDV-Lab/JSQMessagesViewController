@@ -111,10 +111,11 @@ const CGFloat kJSQMessagesCollectionViewAvatarSizeDefault = 30.0f;
                                                  name:UIApplicationDidReceiveMemoryWarningNotification
                                                object:nil];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(jsq_didReceiveDeviceOrientationDidChangeNotification:)
-                                                 name:UIDeviceOrientationDidChangeNotification
-                                               object:nil];
+    // Disabled because of a bad visual effect on the message bubbles
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(jsq_didReceiveDeviceOrientationDidChangeNotification:)
+//                                                 name:UIDeviceOrientationDidChangeNotification
+//                                               object:nil];
 }
 
 - (instancetype)init
